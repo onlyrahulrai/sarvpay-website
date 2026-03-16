@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SarvPay | Fintech & Digital Service Aggregator App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body { background: #f1f5f9; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .hero-section { background: linear-gradient(135deg, #001f3f 0%, #0052D4 100%); }
+        
+        /* Dynamic Colorful Card Styling */
+        .glass-card { 
+            background: white;
+            border-radius: 24px; 
+            transition: 0.4s; 
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+        }
+        .glass-card::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; height: 6px;
+            z-index: 2;
+        }
+        .glass-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+
+        /* Custom Colors for each service type */
+        .card-utility::before { background: linear-gradient(90deg, #3b82f6, #2dd4bf); }
+        .card-finance::before { background: linear-gradient(90deg, #10b981, #34d399); }
+        .card-shopping::before { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
+        .card-travel::before { background: linear-gradient(90deg, #0ea5e9, #38bdf8); }
+        .card-trading::before { background: linear-gradient(90deg, #8b5cf6, #a78bfa); }
+        .card-food::before { background: linear-gradient(90deg, #ef4444, #f87171); }
+
+        .partner-btn { 
+            background: #f8fafc; 
+            border: 1px solid #e2e8f0; 
+            transition: 0.2s; 
+            font-size: 0.75rem; 
+            font-weight: 700; 
+            padding: 8px; 
+            border-radius: 10px; 
+            text-align: center; 
+        }
+        /* Dynamic Button Hover Effects */
+        .card-finance .partner-btn:hover { background: #10b981; color: white; border-color: #10b981; }
+        .card-shopping .partner-btn:hover { background: #f59e0b; color: white; border-color: #f59e0b; }
+        .card-travel .partner-btn:hover { background: #0ea5e9; color: white; border-color: #0ea5e9; }
+        .card-trading .partner-btn:hover { background: #8b5cf6; color: white; border-color: #8b5cf6; }
+        .card-food .partner-btn:hover { background: #ef4444; color: white; border-color: #ef4444; }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm py-4 px-6 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <img src="Logo2.png" alt="SarvPay Logo" class="h-12 w-12 rounded-xl shadow-sm">
+            <span class="text-2xl font-black text-blue-900 tracking-tighter uppercase">SarvPay</span>
+        </div>
+        <div class="flex gap-4">
+            <a href="https://play.google.com/store/apps/details?id=com.sarvpay.application" class="bg-blue-700 text-white px-6 py-2 rounded-full font-bold shadow-md hover:bg-blue-800 transition text-sm">Download Now</a>
+        </div>
+    </nav>
+
+    <header class="hero-section pt-40 pb-24 px-6 text-center text-white">
+         <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight uppercase tracking-tight">Apna Recharge, <br><span class="text-yellow-400">Apni Kamai!</span>
+        </h1>
+        <p class="text-xl opacity-90 max-w-2xl mx-auto mb-10">Get up to 3.5% Cashback on Recharges and 0.25% Direct Referral Commission for a lifetime.</p>
+        
+        <div id="download" class="flex flex-wrap justify-center gap-4">
+            <a href="https://play.google.com/store/apps/details?id=com.sarvpay.application" class="flex items-center gap-3 px-6 py-3 rounded-2xl bg-black border border-gray-700 hover:scale-105 transition">
+                <i class="fab fa-google-play text-2xl"></i>
+                <div class="text-left"><p class="text-[10px] uppercase opacity-70">Get it on</p><p class="font-bold">Google Play</p></div>
+            </a>
+            <a href="Indus AppStore url" class="flex items-center gap-3 px-6 py-3 rounded-2xl bg-blue-900 border border-blue-700 hover:scale-105 transition">
+                <i class="fas fa-mobile-alt text-2xl"></i>
+                <div class="text-left"><p class="text-[10px] uppercase opacity-70">Download from</p><p class="font-bold">Indus AppStore</p></div>
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-20">
+        <h2 class="text-4xl font-black text-blue-900 text-center mb-16 italic uppercase tracking-widest">Our Super Services</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="glass-card card-utility shadow-lg p-8 flex flex-col items-center text-center">
+                <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fas fa-bolt text-3xl text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-black text-slate-800 mb-3">Recharge & Bill Payments</h3>
+                <p class="text-gray-500 text-sm mb-6 leading-relaxed">Instantly pay Mobile, DTH, and Bills. Get guaranteed cashback.</p>
+                <div class="flex gap-2">
+                    <span class="bg-blue-600 text-white text-[10px] px-3 py-1 rounded-full font-bold uppercase">3.5% Commission</span>
+                </div>
+            </div>
+
+            <div class="glass-card card-finance shadow-lg p-8">
+                <h3 class="text-lg font-black text-slate-800 mb-6 flex items-center gap-2">
+                    <i class="fas fa-credit-card text-emerald-500"></i> Financial Marketplace
+                </h3>
+                <div class="grid grid-cols-2 gap-3 text-center">
+                    <div class="partner-btn">HDFC Bank</div>
+                    <div class="partner-btn">SBI Card</div>
+                    <div class="partner-btn">Axis Bank</div>
+                    <div class="partner-btn">ICICI Bank</div>
+                    <div class="partner-btn">IDFC First</div>
+                    <div class="partner-btn">AU Bank</div>
+                </div>
+            </div>
+
+            <div class="glass-card card-shopping shadow-lg p-8">
+                <h3 class="text-lg font-black text-slate-800 mb-6 flex items-center gap-2">
+                    <i class="fas fa-shopping-bag text-orange-500"></i> Shopping Marketplace
+                </h3>
+                <div class="grid grid-cols-3 gap-2">
+                    <div class="partner-btn">Amazon</div>
+                    <div class="partner-btn">Flipkart</div>
+                    <div class="partner-btn">Myntra</div>
+                    <div class="partner-btn">Ajio</div>
+                    <div class="partner-btn">Nykaa</div>
+                    <div class="partner-btn">Tata Cliq</div>
+                </div>
+            </div>
+
+            <div class="glass-card card-travel shadow-lg p-8">
+                <h3 class="text-lg font-black text-slate-800 mb-6 flex items-center gap-2">
+                    <i class="fas fa-plane text-sky-500"></i>  Tickets & Hotels Marketplace
+                </h3>
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="partner-btn">Hotel Booking</div>
+                    <div class="partner-btn">Flight Tickets</div>
+                    <div class="partner-btn">Bus Booking</div>
+                    <div class="partner-btn">Train (IRCTC)</div>
+                </div>
+            </div>
+
+            <div class="glass-card card-trading shadow-lg p-8">
+                <h3 class="text-lg font-black text-slate-800 mb-6 flex items-center gap-2">
+                    <i class="fas fa-chart-line text-purple-500"></i>  Invest & Trading Marketplace
+                </h3>
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="partner-btn">Angel One</div>
+                    <div class="partner-btn">Upstox</div>
+                    <div class="partner-btn">Groww</div>
+                    <div class="partner-btn">Demat A/C</div>
+                </div>
+            </div>
+
+            <div class="glass-card card-food shadow-lg p-8">
+                <h3 class="text-lg font-black text-slate-800 mb-6 flex items-center gap-2">
+                    <i class="fas fa-hamburger text-red-500"></i> Food & Grocery Marketplace
+                </h3>
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="partner-btn">Swiggy</div>
+                    <div class="partner-btn">Zomato</div>
+                    <div class="partner-btn">Blinkit</div>
+                    <div class="partner-btn">BigBasket</div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-slate-900 text-white pt-20 pb-10 px-6">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-white/10 pb-12">
+        
+        <div class="col-span-1 md:col-span-2 text-center md:text-left">
+            <h4 class="text-3xl font-black mb-6 italic">SarvPay</h4>
+            <p class="text-gray-400 text-sm leading-relaxed max-w-sm mx-auto md:mx-0 mb-8">
+                Sarvpay Universe OPC Private Limited. Building India's premier community-driven Fintech ecosystem with self-commission models.
+            </p>
+            
+            <div class="flex justify-center md:justify-start gap-4">
+                <a href="https://www.facebook.com/share/1C1Ptx3UcA/" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#1877F2] hover:scale-110 transition-transform shadow-lg">
+                    <i class="fab fa-facebook-f text-white"></i>
+                </a>
+                <a href="https://www.instagram.com/sarv_pay?igsh=cmxqNjN1dXN6cXZ4" class="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] hover:scale-110 transition-transform shadow-lg">
+                    <i class="fab fa-instagram text-white text-lg"></i>
+                </a>
+                <a href="YOUR_TWITTER_LINK" class="w-10 h-10 flex items-center justify-center rounded-full bg-black border border-white/20 hover:scale-110 transition-transform shadow-lg">
+                    <i class="fab fa-x-twitter text-white"></i>
+                </a>
+                <a href="https://youtube.com/@sarvpay?si=QUZ7g3XG1by4LUCu" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#FF0000] hover:scale-110 transition-transform shadow-lg">
+                    <i class="fab fa-youtube text-white text-lg"></i>
+                </a>
+                <a href="https://whatsapp.com/channel/0029Vb6KvpR5a240iAYsiY3Y" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-green-500 text-white hover:scale-110 transition-transform shadow-lg">
+                        <i class="fab fa-whatsapp text-white text-lg"></i> 
+                    </a>
+            </div>
+        </div>
+
+        <div class="col-span-1 md:col-span-2">
+            <h5 class="font-bold mb-6 text-yellow-400 text-xs uppercase tracking-widest text-center md:text-left">Policy Links</h5>
+            
+            <div class="grid grid-cols-2 gap-y-4 gap-x-2 text-sm text-gray-400">
+                <a href="about.html" class="hover:text-white transition">About Us</a>
+                <a href="contact.html" class="hover:text-white transition">Contact Us</a>
+                
+                <a href="terms.html" class="hover:text-white transition">Terms & Conditions</a>
+                <a href="privacy.html" class="hover:text-white transition">Privacy Policy</a>
+                
+                <a href="refund.html" class="hover:text-white transition text-[11px] md:text-sm">Refund & Cancellation</a>
+                <a href="shipping.html" class="hover:text-white transition text-[11px] md:text-sm">Shipping & Delivery</a>
+                
+                <a href="disclosure.html" class="hover:text-white transition">Disclosure</a>
+                <a href="account-deletion-url.html" class="text-red-500 hover:text-red-400 transition font-bold">Delete Account</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-10">
+        <p class="text-[10px] text-gray-500 uppercase tracking-widest italic">
+            © 2026 Sarvpay Universe OPC Private Limited. All Rights Reserved.
+        </p>
+    </div>
+</footer>

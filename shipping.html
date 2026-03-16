@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping & Delivery | SarvPay</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body { background: #f8fafc; font-family: 'Inter', sans-serif; }
+        .hero-shipping { background: linear-gradient(135deg, #0f172a 0%, #0052D4 100%); }
+        .delivery-card { transition: 0.3s; border: 1px solid #e2e8f0; }
+        .delivery-card:hover { border-color: #3b82f6; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm py-4 px-6 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <img src="Logo2.png" alt="SarvPay Logo" class="h-12 w-12 rounded-xl shadow-sm">
+            <span class="text-xl font-black text-blue-900 tracking-tighter uppercase">SarvPay</span>
+        </div>
+        <a href="index.html" class="flex items-center gap-2 bg-blue-700 text-white px-5 py-2 rounded-full font-bold hover:bg-blue-800 transition shadow-md text-sm">
+            <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
+    </nav>
+
+    <div class="h-16"></div>
+
+    <header class="hero-shipping py-20 px-6 text-center text-white">
+        <h1 class="text-4xl md:text-5xl font-black mb-4 uppercase tracking-tight">Shipping & Delivery</h1>
+        <p class="text-blue-100 max-w-2xl mx-auto opacity-80">Understanding how your digital and physical orders are fulfilled.</p>
+    </header>
+
+    <main class="container mx-auto px-6 py-16 max-w-5xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <div class="delivery-card bg-white p-8 rounded-[32px] flex flex-col items-center text-center">
+                <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fas fa-bolt text-3xl"></i>
+                </div>
+                <h2 class="text-2xl font-black text-slate-800 mb-4 uppercase italic">Digital Services</h2>
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    Services like Mobile Recharges, Bill Payments, and DTH Top-ups are <strong>intangible digital services</strong>. 
+                </p>
+                <div class="bg-blue-50 px-6 py-4 rounded-2xl w-full">
+                    <p class="text-blue-700 font-bold uppercase text-xs tracking-widest mb-1">Delivery Timeline</p>
+                    <p class="text-blue-900 font-black text-xl">INSTANT (Real-time)</p>
+                </div>
+                <p class="text-[10px] text-gray-400 mt-4 uppercase italic">Delivered via Operator Confirmation</p>
+            </div>
+
+            <div class="delivery-card bg-white p-8 rounded-[32px] flex flex-col items-center text-center">
+                <div class="w-16 h-16 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fas fa-truck-fast text-3xl"></i>
+                </div>
+                <h2 class="text-2xl font-black text-slate-800 mb-4 uppercase italic">Physical Goods</h2>
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    For physical products (Amazon, Flipkart, etc.) or travel services (Hotels, Flights) booked via our partner links:
+                </p>
+                <div class="bg-orange-50 px-6 py-4 rounded-2xl w-full">
+                    <p class="text-orange-700 font-bold uppercase text-xs tracking-widest mb-1">Responsibility</p>
+                    <p class="text-orange-900 font-black text-lg">Respective Merchant</p>
+                </div>
+                <p class="text-[10px] text-gray-400 mt-4 uppercase italic">Logistics handled by the partner store</p>
+            </div>
+
+        </div>
+
+        <div class="mt-16 bg-white rounded-[40px] p-8 md:p-12 shadow-sm border border-slate-100">
+            <h3 class="text-xl font-black text-slate-800 mb-6 uppercase tracking-wide">Detailed Fulfillment Policy</h3>
+            <div class="space-y-6 text-gray-600">
+                <div class="flex gap-4">
+                    <i class="fas fa-info-circle text-blue-600 mt-1"></i>
+                    <p><strong>SarvPay</strong> does not handle physical inventory, logistics, or courier services. We act solely as a facilitator and aggregator.</p>
+                </div>
+                <div class="flex gap-4">
+                    <i class="fas fa-info-circle text-blue-600 mt-1"></i>
+                    <p>Shipment tracking and delivery status for physical orders must be checked directly on the merchant's platform where the purchase was made.</p>
+                </div>
+                <div class="flex gap-4">
+                    <i class="fas fa-info-circle text-blue-600 mt-1"></i>
+                    <p>Digital receipts for recharges are available within the "History" section of the SarvPay app immediately after a successful transaction.</p>
+                </div>
+            </div>
+
+            <div class="mt-12 pt-10 border-t border-slate-100 text-center">
+                <p class="text-sm text-gray-500 mb-4">Questions about a specific delivery?</p>
+                <a href="mailto:contact@sarvpay.coin" class="text-blue-700 font-bold hover:underline underline-offset-4">contact@sarvpay.co.in</a>
+            </div>
+        </div>
+    </main>
+
+     <footer class="bg-slate-900 text-white pt-20 pb-10 px-6">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-white/10 pb-12">
+        
+        <div class="col-span-1 md:col-span-2 text-center md:text-left">
+            <h4 class="text-3xl font-black mb-6 italic">SarvPay</h4>
+            <p class="text-gray-400 text-sm leading-relaxed max-w-sm mx-auto md:mx-0 mb-8">
+                Sarvpay Universe OPC Private Limited. Building India's premier community-driven Fintech ecosystem with self-commission models.
+            </p>
+            
+            <div class="flex justify-center md:justify-start gap-4">
+                <a href="https://www.facebook.com/share/1C1Ptx3UcA/" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#1877F2] hover:scale-110 transition-transform shadow-lg">
+                    <i class="fab fa-facebook-f text-white"></i>
+                </a>
+                <a href="https://www.instagram.com/sarv_pay?igsh=cmxqNjN1dXN6cXZ4" class="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] hover:scale-110 transition-transform shadow-lg">
+                    <i class="fab fa-instagram text-white text-lg"></i>
+                </a>
+                <a href="YOUR_TWITTER_LINK" class="w-10 h-10 flex items-center justify-center rounded-full bg-black border border-white/20 hover:scale-110 transition-transform shadow-lg">
+                    <i class="fab fa-x-twitter text-white"></i>
+                </a>
+                <a href="https://youtube.com/@sarvpay?si=QUZ7g3XG1by4LUCu" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#FF0000] hover:scale-110 transition-transform shadow-lg">
+                    <i class="fab fa-youtube text-white text-lg"></i>
+                </a>
+                <a href="https://whatsapp.com/channel/0029Vb6KvpR5a240iAYsiY3Y" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-green-500 text-white hover:scale-110 transition-transform shadow-lg">
+                        <i class="fab fa-whatsapp text-white text-lg"></i> 
+                    </a>
+            </div>
+        </div>
+
+        <div class="col-span-1 md:col-span-2">
+            <h5 class="font-bold mb-6 text-yellow-400 text-xs uppercase tracking-widest text-center md:text-left">Policy Links</h5>
+            
+            <div class="grid grid-cols-2 gap-y-4 gap-x-2 text-sm text-gray-400">
+                <a href="about.html" class="hover:text-white transition">About Us</a>
+                <a href="contact.html" class="hover:text-white transition">Contact Us</a>
+                
+                <a href="terms.html" class="hover:text-white transition">Terms & Conditions</a>
+                <a href="privacy.html" class="hover:text-white transition">Privacy Policy</a>
+                
+                <a href="refund.html" class="hover:text-white transition text-[11px] md:text-sm">Refund & Cancellation</a>
+                <a href="shipping.html" class="hover:text-white transition text-[11px] md:text-sm">Shipping & Delivery</a>
+                
+                <a href="disclosure.html" class="hover:text-white transition">Disclosure</a>
+                <a href="account-deletion-url.html" class="text-red-500 hover:text-red-400 transition font-bold">Delete Account</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-10">
+        <p class="text-[10px] text-gray-500 uppercase tracking-widest italic">
+            © 2026 Sarvpay Universe OPC Private Limited. All Rights Reserved.
+        </p>
+    </div>
+</footer>
